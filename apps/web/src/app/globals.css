@@ -1,0 +1,99 @@
+@import "tailwindcss";
+@import "@eachpedia/config/tailwind/tema.css";
+
+/*
+ * Variáveis que o shadcn/ui espera, apontando para os tokens da marca.
+ * Os tokens em si ficam em packages/config/tailwind/tema.css.
+ * Só existe tema claro: a identidade visual ainda não define o escuro.
+ */
+:root {
+  color-scheme: light;
+
+  --background: var(--color-fundo);
+  --foreground: var(--color-grafite);
+  --card: var(--color-superficie);
+  --card-foreground: var(--color-grafite);
+  --popover: var(--color-superficie);
+  --popover-foreground: var(--color-grafite);
+  --primary: var(--color-vermelho);
+  --primary-foreground: #ffffff;
+  --secondary: var(--color-superficie);
+  --secondary-foreground: var(--color-grafite);
+  --muted: var(--color-cinza-50);
+  --muted-foreground: var(--color-cinza-600);
+  --accent: var(--color-amarelo-100);
+  --accent-foreground: var(--color-grafite);
+  --destructive: var(--color-vermelho-700);
+  --border: var(--color-cinza-200);
+  --input: var(--color-cinza-300);
+  --ring: var(--color-vermelho);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: var(--tracking-titulo);
+    text-wrap: balance;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+}
+
+/* Rótulo técnico em caixa alta, como nas pranchas da identidade visual. */
+@utility rotulo {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: var(--tracking-rotulo);
+  text-transform: uppercase;
+  color: var(--color-cinza-600);
+}
+
+/* Link de texto corrido. */
+@utility link-texto {
+  color: var(--color-vermelho-700);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+
+  &:hover {
+    color: var(--color-vermelho-900);
+  }
+}
