@@ -1,6 +1,6 @@
 import { Simbolo } from "@/components/marca/Simbolo";
 
-const URL_REPOSITORIO = "https://github.com/eachpedia/eachpedia";
+const URL_REPOSITORIO = "https://github.com/lucasstampini/eachpedia";
 
 export function Footer() {
   return (
