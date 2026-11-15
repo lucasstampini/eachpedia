@@ -1,0 +1,28 @@
+{
+  "name": "@eachpedia/scraper",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Coleta dos dados públicos do JúpiterWeb",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "scrape": "node src/cli.ts"
+  },
+  "dependencies": {
+    "@eachpedia/core": "workspace:*",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@eachpedia/config": "workspace:*",
+    "@types/node": "catalog:",
+    "eslint": "catalog:",
+    "typescript": "catalog:",
+    "vite": "catalog:",
+    "vitest": "catalog:"
+  }
+}

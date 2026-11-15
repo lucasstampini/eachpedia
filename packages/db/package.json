@@ -1,0 +1,23 @@
+{
+  "name": "@eachpedia/db",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Tipos gerados do Supabase e helpers de acesso",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@eachpedia/config": "workspace:*",
+    "@types/node": "catalog:",
+    "eslint": "catalog:",
+    "typescript": "catalog:",
+    "vite": "catalog:",
+    "vitest": "catalog:"
+  }
+}
