@@ -1,0 +1,2 @@
+# Mantém fim de linha LF em todo sistema (o Prettier exige).
+* text=auto eol=lf
