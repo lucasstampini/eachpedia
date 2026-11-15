@@ -11,5 +11,8 @@ export const USER_AGENT = `EachpediaBot/0.1 (+${URL_REPOSITORIO})`;
 /** Base das páginas públicas do JúpiterWeb. Só páginas públicas, nunca áreas autenticadas. */
 export const URL_JUPITERWEB = "https://uspdigital.usp.br/jupiterweb";
 
+/** Código da EACH no JúpiterWeb (parâmetro codcg). */
+export const CODIGO_UNIDADE_EACH = 86;
+
 /** Intervalo mínimo entre requisições: no máximo 1 por segundo. */
 export const INTERVALO_MINIMO_MS = 1000;

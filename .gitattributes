@@ -1,2 +1,4 @@
 # Mantém fim de linha LF em todo sistema (o Prettier exige).
 * text=auto eol=lf
+# Fixtures do scraper sao bytes em ISO-8859-1: nao converter fim de linha.
+packages/scraper/fixtures/*.html -text

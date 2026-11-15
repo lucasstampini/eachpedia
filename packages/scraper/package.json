@@ -11,16 +11,20 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "scrape": "node src/cli.ts"
+    "scrape": "tsx src/cli.ts"
   },
   "dependencies": {
     "@eachpedia/core": "workspace:*",
+    "@supabase/supabase-js": "^2.119.0",
+    "cheerio": "^1.2.0",
+    "domhandler": "^6.0.1",
     "zod": "catalog:"
   },
   "devDependencies": {
     "@eachpedia/config": "workspace:*",
     "@types/node": "catalog:",
     "eslint": "catalog:",
+    "tsx": "^4.23.15",
     "typescript": "catalog:",
     "vite": "catalog:",
     "vitest": "catalog:"

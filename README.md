@@ -33,7 +33,20 @@ pnpm test                    # testes unitários
 pnpm lint && pnpm typecheck  # checagens de código
 pnpm format                  # formata tudo com Prettier
 pnpm supabase db reset       # recria o banco local com migrations e seed
+pnpm supabase test db        # testes de segurança do banco (RLS)
 ```
+
+### Dados oficiais (scraper)
+
+O scraper lê as páginas públicas do JúpiterWeb (nunca áreas com login), no máximo uma por segundo, e grava no banco só o que mudou.
+
+```bash
+pnpm scrape --sem-banco --saida dados.json   # só coleta e valida
+pnpm scrape --curso 86200                    # um curso só, para testar
+pnpm scrape                                  # coleta tudo e grava (pede SUPABASE_URL e SUPABASE_SERVICE_ROLE_KEY)
+```
+
+Em desenvolvimento as páginas baixadas ficam em `packages/scraper/.cache`, para não bater no JúpiterWeb a cada teste. Use `--sem-cache` para baixar de novo.
 
 ## Estrutura
 
