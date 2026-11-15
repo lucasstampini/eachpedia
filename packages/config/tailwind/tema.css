@@ -1,0 +1,46 @@
+/*
+ * Tema do Eachpedia: fonte única dos tokens da identidade visual.
+ * Referência: docs/identidade-visual.md
+ * Importe depois de "tailwindcss" no CSS de cada app (web e extensão).
+ */
+
+@theme {
+  /* Marca */
+  --color-vermelho: #d7262e;
+  --color-vermelho-50: #fbe9ea;
+  --color-vermelho-700: #b81e25;
+  --color-vermelho-800: #9e1a20;
+  --color-vermelho-900: #8e151b;
+  --color-amarelo: #ffc400;
+  --color-amarelo-100: #fff3cc;
+
+  /* Neutros */
+  --color-grafite: #1c1c1c;
+  --color-cinza-700: #3f3f3f;
+  --color-cinza-600: #525252;
+  --color-cinza-300: #d4d4d4;
+  --color-cinza-200: #e5e5e5;
+  --color-cinza-50: #fafafa;
+  --color-fundo: #f7f7f7;
+  --color-superficie: #ffffff;
+
+  /*
+   * Tipografia. As variáveis --font-inter etc. vêm do next/font no web.
+   * Onde elas não existirem (extensão), vale o nome da família.
+   */
+  --font-sans: var(--font-inter, "Inter"), system-ui, sans-serif;
+  --font-display:
+    var(--font-space-grotesk, "Space Grotesk"), var(--font-inter, "Inter"), sans-serif;
+  --font-mono: var(--font-jetbrains-mono, "JetBrains Mono"), ui-monospace, monospace;
+
+  --tracking-logo: -0.04em;
+  --tracking-titulo: -0.03em;
+  --tracking-rotulo: 0.04em;
+
+  /* Forma */
+  --radius-chip: 8px;
+  --radius-controle: 10px;
+  --radius-card: 16px;
+
+  --shadow-card: 0 1px 2px rgb(0 0 0 / 0.06);
+}
