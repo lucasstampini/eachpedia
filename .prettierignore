@@ -1,0 +1,12 @@
+node_modules
+.next
+.turbo
+dist
+coverage
+pnpm-lock.yaml
+packages/db/src/types.ts
+packages/scraper/fixtures
+packages/scraper/.cache
+supabase/.branches
+supabase/.temp
+CLAUDE.md

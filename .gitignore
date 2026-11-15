@@ -1,0 +1,43 @@
+# guia local do Claude Code (não versionado)
+CLAUDE.md
+.claude/
+
+# dependências
+node_modules/
+.pnpm-store/
+
+# builds
+.next/
+out/
+dist/
+build/
+.turbo/
+.output/
+.wxt/
+*.tsbuildinfo
+next-env.d.ts
+
+# ambiente e segredos
+.env
+.env.*
+!.env.example
+
+# supabase local
+supabase/.branches/
+supabase/.temp/
+
+# cache do scraper (páginas brutas do JúpiterWeb)
+packages/scraper/.cache/
+
+# testes
+coverage/
+playwright-report/
+test-results/
+
+# sistema e editor
+.DS_Store
+Thumbs.db
+*.log
+.vscode/*
+!.vscode/extensions.json
+.idea/

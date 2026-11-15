@@ -1,0 +1,28 @@
+{
+  "name": "eachpedia",
+  "private": true,
+  "description": "Plataforma aberta e comunitária para os alunos da EACH-USP",
+  "license": "MIT",
+  "packageManager": "pnpm@12.21.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "test:e2e": "turbo run test:e2e",
+    "scrape": "pnpm --filter @eachpedia/scraper scrape",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "prettier": "^3.10.1",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "supabase": "^3.1.0",
+    "turbo": "^2.11.11",
+    "typescript": "catalog:"
+  }
+}

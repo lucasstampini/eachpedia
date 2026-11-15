@@ -1,0 +1,13 @@
+packages:
+  - apps/*
+  - packages/*
+
+# Versões compartilhadas entre os pacotes. Use "catalog:" no package.json.
+# TypeScript fica em 6.0 enquanto o typescript-eslint não aceitar o 7.
+catalog:
+  "@types/node": ^24.0.0
+  eslint: ^10.15.0
+  typescript: ~6.0.3
+  vite: ^8.3.8
+  vitest: ^5.1.0
+  zod: ^4.6.7
