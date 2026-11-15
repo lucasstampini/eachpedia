@@ -1,5 +1,9 @@
+/**
+ * Por enquanto o repositório fica numa conta pessoal. Quando migrar para a
+ * organização, troque aqui e no rodapé do site (Footer.tsx).
+ */
 /** Endereço do repositório, usado para o JúpiterWeb saber quem está pedindo as páginas. */
-export const URL_REPOSITORIO = "https://github.com/eachpedia/eachpedia";
+export const URL_REPOSITORIO = "https://github.com/lucasstampini/eachpedia";
 
 /** Identificação enviada em toda requisição. */
 export const USER_AGENT = `EachpediaBot/0.1 (+${URL_REPOSITORIO})`;
