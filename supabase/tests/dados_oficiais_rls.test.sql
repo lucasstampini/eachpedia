@@ -1,6 +1,6 @@
 -- Testes de RLS dos dados oficiais. Rode com: pnpm supabase test db
 begin;
-select plan(25);
+select plan(27);
 
 -- Dados de exemplo, inseridos como dono do banco (como o scraper faz com a service role).
 insert into public.disciplinas (sigla, nome, creditos_aula, creditos_trabalho, carga_horaria, content_hash)
