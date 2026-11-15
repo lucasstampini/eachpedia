@@ -1,0 +1,2 @@
+-- Dados de exemplo para o banco local. Roda depois das migrations no "supabase db reset".
+-- Ainda vazio: os dados oficiais chegam pelo scraper na Fase 1.
